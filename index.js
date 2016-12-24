@@ -1,2 +1,5 @@
 var server = require("./server");
-server.start();
+var router = require("./router");
+
+//injects route function of router into server 
+server.start(router.route);
